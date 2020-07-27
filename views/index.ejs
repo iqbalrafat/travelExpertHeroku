@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- *********** Fontawsome ************* -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+ <!-- *********CSS USed In Project******* -->
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/typography.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <link rel="shortcut icon" type="image/png" href="/img/favicon.png">    
+        <title>Travel-Expert</title>
+    </head>
+    <body>
+    <header class="header">
+        <div class="text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary-main">Travel Expert</span>
+                <span class="heading-primary-sub">the world is within your reach</span>
+            </h1>
+            <a  href="/login" class="btn btn-white">Discover Our Tours</a>
+         </div>
+    </header>
+    <div class="div-destination" id="destinations">
+       <div><h4 Class="destinations" style="text-align: center;width:100%;padding-bottom: 10px;">Destination</h4> </div>
+   
+    </div>
+
+    <div id="contact-us" class="div-contact" >
+        <form  class="form-contact" action="mailto:rafat.iqbal@edu.sait.ca" method="POST" enctype="text/plain"> 
+            <h4>Contact Us</h4>
+            <div> 
+                <label for="fname" class="text-label">Full Name</label><br>
+                <input type="text" id="fname" name="Full Name" placeholder="Full Name" class="text-form" title="Please Enter Your Name" required >
+            </div>
+
+            <div> 
+                <label for="email" class="text-label">Email</label><br>
+                <input type="email" id="email" name="Full Name" placeholder="Email" class="text-form" title="Please Enter Your Email name@domain.com" required >
+            </div>
+            
+            <div >
+                <label for="phone"  class="text-label">Phone Number</label><br>
+                <input type="tel" id="fname" name="phone" placeholder="Phone Number (xxx-xxx-xxxx)" class="text-form" title="Please Enter Your Phone Number xxx-xxx-xxxx format" required >
+            </div>
+            <div> 
+            <textarea name="message" rows="5" cols="33" class="text-label" style="margin-left: 5%; "> message Box</textarea><br>
+            </div>
+            <div>
+                 <input type="submit" id="submit" value="Submit" class="text-label" >
+            </div>         
+        </form>
+    </div>
+    <div class="div-location" id="location" >
+        <h4>Our Location</h4>
+        <div class="div-map" >
+            <p> 1301 16 Ave NW
+                Calgary, AB T2M 4W7
+            </p>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5014.806349498672!2d-114.0936984723271!3d51.06410711825886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716f9268a69e81%3A0x561733c721293299!2s1301%2016%20Ave%20NW%2C%20Calgary%2C%20AB%20T2M%204W7!5e0!3m2!1sen!2sca!4v1594239123186!5m2!1sen!2sca" 
+                width="400"
+                height="300" 
+                frameborder="0" 
+                style="border:0;" 
+                allowfullscreen="" 
+                aria-hidden="false" 
+                tabindex="0">
+            </iframe>               
+        </div>
+    </div> 
+    <div class="footer">
+      <footer>
+         <div>
+                <ul class="social">
+                    <li>Follow us</li>
+                    <li class="social"><a href="https://www.facebook.com/sait/">
+                        <i style="font-size:24px" class="fa">&#xf082;</i></a></li>
+                    <li class="social"><a href="https://twitter.com/sait">
+                        <i style="font-size:24px" class="fa">&#xf099;</i></a></li>
+                    <li class="social"><a href="https://www.instagram.com/SAIT/">
+                         <i style="font-size:24px" class="fa">&#xf16d;</i></a></li>         
+                </ul>
+            <p class="copyright">Copyright &copy; 2020 Travel Expert</p>
+            <p id="year" class="copyright"></p>
+         </div>
+        </footer>
+    </div> 
+      <!-- Frontend JavaScript -->
+      <%- include('./partials/common-js-script'); %>
+    </body>
+</html>

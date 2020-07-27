@@ -1,0 +1,42 @@
+/* ******footer ******* */
+.footer {
+	/* position: absolute;*/
+	box-sizing: border-box;
+	border: #006400;
+	height: 80px;
+	background-image: linear-gradient(to left bottom, rgba(126, 213, 111, 0.800), rgba(40, 180, 131, 0.800));
+	clear: both;
+	margin-top: 10px;
+	width: 100%;
+	max-width: 100%;
+}
+***** Social Media***** 
+.social ul {
+	list-style: none;
+	padding: 10px;
+	display: inline;
+}
+.social li {
+	display: inline;
+	padding: 10px;
+}
+a {
+	text-decoration: none;
+	color: #000000;
+}
+a:hover {
+	background-color: darkgreen;
+	color: lightgreen;
+}
+.copyright {
+	font-size: 12px;
+	margin-bottom: 0px;
+	max-width: 100%;
+	width: 100%;
+	text-align: center;
+}
+p.copyright {
+	max-width: ;
+	width: 100%;
+	font-weight: bold;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>serch</title>
+  <%- include('./partials/signupLoginCss'); %> 
+</head>
+<body>
+      <!-- Header -->
+      <%- include('./partials/head-login-reg'); %>
+  <header class="full-vh center-items" style="margin-left: 400px;margin-right: 400px;">
+    <figure>
+      <img src="http://picsum.photos/id/<%= id %>/500" alt="<%= title %>">
+      <figcaption style="overflow-wrap: normal;"><%= detail %>!</figcaption>
+    </figure>
+     <!-- Frontend JavaScript -->
+     <%- include('./partials/common-js-script'); %>
+</body>
+</html>

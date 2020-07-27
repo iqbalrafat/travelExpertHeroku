@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- *********** Fontawsome ************* -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- ********* CSS Used ********** -->
+       <%- include('./partials/signupLoginCss'); %> 
+    <link rel="shortcut icon" type="image/png" href="/img/favicon.png">
+    <title>Login</title> 
+</head>
+<body>
+    <!-- Header -->
+    <%- include('./partials/head-login-reg'); %>
+
+    <div id="login" class="div-contact-registration" >
+      <form  class="form-contact" method="POST"> 
+          <h4>Login Form</h4>
+          <div> 
+              <label for="email" class="text-label">Email</label><br>
+              <input type="email" id="email" name="email" placeholder="Email name@domain" class="text-form1" minlength="8" maxlength="50" title="Enter valid Email Address" required >
+          </div>       
+          <div >
+              <label for="pwd"  class="text-label">Password</label><br>
+              <input type="password" id="pwd" name="pwd" placeholder="Password" class="text-form1" title="Please Enter Your Password" required >
+          </div>
+          <div>
+                <input type="submit" id="submit" value="Submit" class="text-label" >
+          </div> 
+                 <label for="agree" style="font-size: x-small;font-weight: bold;" >Subscribe To News Letter</label>
+                 <input type="checkbox" id="agree" name="agree1" value="1">
+          <h6>Not Member yet </space><a href="/signup" class="loginregister">Register Now</a></h6>       
+        </form>
+    </div>
+            <!-- Footer -->
+    <%- include('./partials/footer'); %>
+            <!-- Frontend JavaScript -->
+    <%- include('./partials/common-js-script'); %>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- *********** Fontawsome ************* -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="/img/favicon.png">
+    <!-- *********CSS USed In Project******* -->
+    <%- include('./partials/signupLoginCss'); %>
+    <title>SignUp</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <%- include('./partials/head-login-reg'); %>
+     
+        <!-- **************Registration Form ****************** -->
+        <div id="registration" class="div-contact-registration" >
+            <form  class="form-contact" method="POST"> 
+                <h4>SignUp</h4>
+                <div> 
+                    <label for="fname" class="text-label">Full Name</label><br>
+                    <input type="text" id="fname" name="Full Name" placeholder="Full Name" class="text-form1" pattern="[aA-zZ]{8,50}" title="Name Should be minimum 8 character long Use upper or Lower Case only"  required >
+                </div>
+                <div> 
+                    <label for="email" class="text-label">Email</label><br>
+                    <input type="email" id="email" name="email" placeholder="name@domain" class="text-form1" minlength="8" maxlength="50" title="Enter valid minimum 8 character Valid Email address" required >
+                </div>
+                <div >
+                    <label for="pwd"  class="text-label">Password</label><br>
+                    <input type="password" id="pwd" name="pwd" placeholder="Password" class="text-form1" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" 
+                    style="font-size: small;" title="Please Enter at least 8 character Password, should contain at least on digit no special letter" >
+                </div>
+                <div>
+                    <label for="cpwd"  class="text-label">Password</label><br>
+                    <input type="password" id="cpwd" name="cpwd" placeholder="Confirm Password" class="text-form1" minlength="8" maxlength="50" title=" Please re-enter password. Password should match" required >
+                </div>
+                <div>
+                    <input type="submit" id="submit" value="Submit" class="text-label" style="margin-left: 5%; margin-top:10px ;margin-bottom: 5%;height: 40px; width: 50%;border-radius: 10%; text-align: center; " >
+                </div> 
+                    <label for="agree"  style="font-size: x-small;font-weight: bold;">Subscribe To News Letter</label>
+                    <input type="checkbox" id="agree" name="agree1" value="1">
+                <h6>Already Member <a href="/login" class="loginregister">Member Login</a></h6>               
+            </form>
+        </div>
+            <!-- Footer -->
+        <%- include('./partials/footer'); %>
+             <!-- Frontend JavaScript -->
+        <%- include('./partials/common-js-script'); %>
+    </body>
+</html>

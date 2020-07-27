@@ -1,0 +1,399 @@
+/*
+COLORS Theme
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485, # #006400;
+
+*/
+/*universal selector */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* ********* Body style Design ******** */
+body {
+	font-family: "Lato", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.7;
+	color: black;
+	padding: 30px;
+}
+.header {
+	height: 95vh;
+	background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.800), rgba(40, 180, 131, 0.800)),
+		url(../img/Athabasca_Hero.jpg);
+	background-size: cover;
+	background-position: top;
+	clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+	position: relative;
+}
+.logo-box {
+	position: absolute;
+	top: 50px;
+	left: 50px;
+}
+.logo {
+	height: 20px;
+}
+
+.topnav {
+	overflow: hidden;
+	background-color: #333;
+	width: 100%;
+	max-width: 100%;
+}
+
+.topnav a {
+	float: right;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.topnav a.active {
+	background-color: #4caf50;
+	color: white;
+}
+
+.topnav .icon {
+	display: none;
+}
+
+.text-box {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.heading-primary-main {
+	display: block;
+	animation-name: move-left;
+	animation-duration: 2s;
+	animation-timing-function: ease-in;
+}
+.heading-primary-sub {
+	display: block;
+	animation: move-right 2s ease-in;
+}
+/* *** Hero Text Animation ***** */
+@keyframes move-left {
+	0% {
+		opacity: 0;
+		transform: translate(-100px);
+	}
+	80% {
+		transform: translate(10px);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+@keyframes move-right {
+	0% {
+		opacity: 0;
+		transform: translate(0);
+	}
+	80% {
+		transform: translate(10px);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(100);
+	}
+}
+/* ********* Hero Button Styles ****** */
+.btn:link,
+.btn:visited {
+	padding: 15px 40px;
+	display: inline-block;
+	border-radius: 100px;
+	transition: all 0.2s;
+}
+.btn:hover {
+	transform: translate(-3px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.btn:active {
+	transform: translate(-1px);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ******About US ***** */
+.div-about {
+	width: 40%;
+	float: left;
+}
+
+/* ******* Destination ****** */
+.div-destination {
+	width: 100%;
+	padding-left:10px;
+	/* float: left; */
+	display: flex;
+	flex-wrap: wrap;
+	border: solid;
+	padding-top: 20px;
+	background-color:#7ed56f;
+	justify-content: space-evenly;
+	min-width: 30vh;
+}
+.div-destination-child {
+	width: 45%;
+	float: left;
+}
+
+.div-destination-child img {
+	max-width: 90%;
+	max-height: 90%;
+	padding-left: 10%;
+	padding-top: 5%;
+}
+
+/* ******** contact form and Location ****** */
+
+.div-contact {
+	width: 50%;
+	float: left;
+}
+.form-contact {
+	border: solid;
+	height: auto;
+	width: 400px;
+	margin-left: 10px;
+	margin-bottom: 5%;
+	margin-top: 4%;
+	max-width: 100%;
+}
+.div-location {
+	border: solid;
+	height: 390px;
+	width: 500px;
+	float: left;
+	margin-top: 2%;
+	padding-left: 0px;
+}
+.div-map {
+	padding-left: 50px;
+	width: 100%;
+}
+.text-form {
+	margin-left: 30px;
+	height: 25px;
+	width: 300px;
+	border-radius: 10%;
+	text-align: justify;
+}
+.text-label {
+	margin-left: 30px;
+	margin-top: 10px;
+}
+
+/* page not found */
+.pagenotfound
+{
+		height: 95vh;
+		background-image: url(../img/error_404_page_not_found.jpg);
+		background-size: cover;
+		background-position: top;
+		clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+		position: relative;
+	
+}
+
+@media only screen and (max-width: 890px) {
+	.div-about {
+		width: 100%;
+		text-align: center;
+		padding-left: 0%;
+	}
+	.div-about p {
+		padding-left: 0%;
+	}
+
+	.div-destination {
+		width: 100%;
+		margin-top: 10px;
+	}
+	.div-destination-child img {
+		max-width: 100%;
+		max-height: 100%;
+	}
+
+	.div-contact {
+		width: 100%;
+		margin-left: 20%;
+	}
+	.form-contact {
+		max-width: 100%;
+	}
+
+	.div-location {
+		width: 100%;
+		margin-bottom: 5%;
+	}
+	.div-map {
+		padding-left: 0%;
+		width: 100%;
+	}
+	.div-map p {
+		margin-left: 30%;
+	}
+
+	iframe {
+		width: 650px;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	iframe {
+		width: 600px;
+		height: 280px;
+		margin-left: 10%;
+		margin-top: 10px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.div-contact {
+		width: 100%;
+		margin-left: 20%;
+	}
+
+	iframe {
+		width: 580px;
+		height: 280px;
+		margin-left: 10%;
+		margin-top: 10px;
+	}
+}
+
+@media only screen and (max-width: 660px) {
+	.div-contact {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 590px) {
+	.div-contact {
+		width: 80%;
+		margin-left: 5%;
+	}
+	.form-contact input {
+		max-width: 80%;
+	}
+	.form-contact textarea {
+		max-width: 80%;
+		margin-left: 0px;
+	}
+
+	.div-map {
+		padding-left: 0%;
+		width: 100%;
+	}
+
+	.div-destination-child {
+		width: 100%;
+		margin-left: 0px;
+	}
+
+	.div-map p {
+		margin-left: 13%;
+	}
+
+	iframe {
+		width: 300px;
+		margin-left: 10%;
+	}
+	.topnav a:not(:first-child) {
+		display: none;
+	}
+	.topnav a.icon {
+		float: right;
+		display: block;
+	}
+	.logo-box {
+		display: none;
+	}
+
+}
+@media screen and (max-width: 590px) {
+	.topnav.responsive {
+		position: relative;
+	}
+	.topnav.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+}
+
+@media only screen and (max-width: 440px) {
+	iframe {
+		width: 280px;
+		margin-left: 12%;
+	}
+
+	.div-contact {
+		padding-left: 0%;
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.form-contact {
+		margin-left: 0px;
+	}
+
+	.div-destination-child img {
+		width: 100%;
+		padding-left: 0%;
+	}
+}
+@media only screen and (max-width: 400px) {
+	iframe {
+		width: 230px;
+		height: 280px;
+		margin-left: 10%;
+		margin-top: 10px;
+	}
+
+	.div-location p {
+		font-size: 12px;
+		font-weight: bold;
+		margin-left: 15%;
+		font-weight: 100%;
+	}
+
+	.div-contact {
+		padding-left: 0%;
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.form-contact {
+		margin-left: 0px;
+	}
+
+	.div-destination-child img {
+		width: 100%;
+		padding-left: 0%;
+	}
+}
